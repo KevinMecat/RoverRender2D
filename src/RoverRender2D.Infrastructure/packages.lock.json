@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dependencies": {
+    "net10.0": {
+      "roverrender2d.application": {
+        "type": "Project",
+        "dependencies": {
+          "RoverRender2D.Domain": "[1.0.0, )"
+        }
+      },
+      "roverrender2d.contracts": {
+        "type": "Project"
+      },
+      "roverrender2d.domain": {
+        "type": "Project"
+      }
+    }
+  }
+}
