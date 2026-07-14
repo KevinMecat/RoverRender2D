@@ -1,0 +1,34 @@
+name: Solicitud de función
+description: Proponer una mejora acotada y verificable.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Describe la necesidad de ingeniería o del usuario.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Resultado propuesto
+      description: Indica el resultado observable, no solo la implementación.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceptación
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Límites
+      options:
+        - label: La propuesta mantiene el flujo completamente offline.
+          required: true
+        - label: No afirma certificación topográfica, catastral ni hidráulica.
+          required: true
+

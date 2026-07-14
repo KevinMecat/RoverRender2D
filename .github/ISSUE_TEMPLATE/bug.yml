@@ -1,0 +1,40 @@
+name: Reporte de error
+description: Informar un fallo reproducible de RoverRender2D.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Explica qué ocurrió y qué esperabas.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducir
+      placeholder: "1. Importar...\n2. Seleccionar...\n3. Observar..."
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión o commit
+    validations:
+      required: true
+  - type: dropdown
+    id: data-origin
+    attributes:
+      label: Origen de los datos
+      options:
+        - Misión sintética incluida
+        - Misión real anonimizada
+        - Sin datos de misión
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnóstico seguro
+      description: Adjunta logs sin secretos ni payloads crudos sensibles.
+
